@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./problem-sets/PS1",
+        "./problem-sets/PS1/src",
+        "./problem_sets/PS1/src"
+    ]
+}
