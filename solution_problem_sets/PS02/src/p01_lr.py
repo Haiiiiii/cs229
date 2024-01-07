@@ -61,11 +61,11 @@ def main():
     # plt.savefig('output/ds1_b.png')
 
     print('==== Training model on data set A ====')
-    Xa, Ya = util.load_csv('../data/ds1_a.csv', add_intercept=True)
+    Xa, Ya = util.load_csv('/Users/tranlehai/Desktop/cs229/solution_problem_sets/PS02/data/ds1_a.csv', add_intercept=True)
     logistic_regression(Xa, Ya)
 
     print('\n==== Training model on data set B ====')
-    Xb, Yb = util.load_csv('../data/ds1_b.csv', add_intercept=True)
+    Xb, Yb = util.load_csv('/Users/tranlehai/Desktop/cs229/solution_problem_sets/PS02/data/ds1_b.csv', add_intercept=True)
     logistic_regression(Xb, Yb)
 
 

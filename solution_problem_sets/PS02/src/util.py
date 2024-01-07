@@ -1,4 +1,7 @@
 import csv
+import torch
+import clip
+import cv2
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -97,7 +100,8 @@ def plot(x, y, theta, save_path, correction=1.0):
     # Add labels and save to disk
     plt.xlabel('x1')
     plt.ylabel('x2')
-    plt.savefig(save_path)
+    if save_path is not None:
+        plt.savefig(save_path)
 
 
 def plot_contour(predict_fn):
